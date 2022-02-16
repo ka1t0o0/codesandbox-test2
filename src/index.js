@@ -87,11 +87,47 @@
 // const message2 = `my name is ${name}. ${age}years old`;
 // console.log(message2);
 
-const myProfile = ["kaito", 28];
+// const myProfile = ["kaito", 28];
 
-const message3 = `my name is ${myProfile[0]} ${myProfile[1]} years old`;
-console.log(message3);
+// const message3 = `my name is ${myProfile[0]} ${myProfile[1]} years old`;
+// console.log(message3);
 
-const [name, age] = myProfile;
-const message4 = `my name is ${name} ${age} years old ver4`;
-console.log(message4);
+// const [name, age] = myProfile;
+// const message4 = `my name is ${name} ${age} years old ver4`;
+// console.log(message4);
+
+// //デフォルト値、引数など
+
+// const sayHello = (name = "guest") => console.log(`Hello! ${name}!`);
+// sayHello();
+
+//スプレッド構文
+// const arr1 = [1, 2];
+// // console.log(arr1);
+// // console.log(...arr1);
+
+// const sumFunc = (num1, num2) => console.log(num1 + num2);
+// sumFunc(arr1[0], arr1[1]);
+// sumFunc(...arr1);
+
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
+
+const arr4 = [10, 20];
+const arr5 = [30, 40];
+
+const arr6 = [...arr4];
+arr6[0] = 100;
+console.log(arr6);
+console.log(arr4);
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
+
+// const arr8 = arr4;
+// console.log(arr8);
+
+// arr8[0] = 100
+// console.log(arr4);
